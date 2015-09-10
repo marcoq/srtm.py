@@ -161,8 +161,8 @@ class GeoElevationData:
         """
         Returns a PIL image.
         """
-        import Image as mod_image
-        import ImageDraw as mod_imagedraw
+        import PIL.Image as mod_image
+        import PIL.ImageDraw as mod_imagedraw
 
         if not size or len(size) != 2:
             raise Exception('Invalid size %s' % size)
